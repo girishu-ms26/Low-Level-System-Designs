@@ -80,7 +80,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.CaseTwo.testCase2">
+  <component name="RunManager" selected="JUnit.CaseOne.testCaseOne">
     <configuration name="CaseOne.testCaseOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <extension name="coverage">
@@ -130,9 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CaseOne.testCaseOne" />
         <item itemvalue="JUnit.CaseTwo.testCase2" />
         <item itemvalue="JUnit.CaseTwo" />
-        <item itemvalue="JUnit.CaseOne.testCaseOne" />
       </list>
     </recent_temporary>
   </component>
