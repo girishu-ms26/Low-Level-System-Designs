@@ -7,10 +7,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @Getter
-public class Ticket {
-    int theatreId;
-    int showId;
-    User user;
-    List<Integer> seatNo;
-
+public class City {
+    String cityName;
+    List<Theatre> theatreList;
 }
