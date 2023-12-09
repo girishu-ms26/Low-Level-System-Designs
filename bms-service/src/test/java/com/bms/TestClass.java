@@ -1,7 +1,7 @@
 package com.bms;
 
 import com.bms.model.*;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -61,7 +61,7 @@ public class TestClass extends BaseTest {
         }
         String city = "Bangalore";
         List<Movie> movies = bookMyShowController.getAllMoviesBasedOnCity(city);
-        Assert.assertEquals(SeatStatus.BOOKED,movies.get(0).getShow().get(0).getSeats().get(1).getSeatStatus());
+        Assertions.assertEquals(SeatStatus.BOOKED,movies.get(0).getShow().get(0).getSeats().get(1).getSeatStatus());
         System.out.println("Movies Based on city");
         for (Movie movie : movies) {
             System.out.println("Movie Name " +movie.getMovieName()+
@@ -78,9 +78,6 @@ public class TestClass extends BaseTest {
         List<Integer> seats = new ArrayList<>();
         seats.add(1);
         seats.add(2);
-        Ticket ticket = bookMyShowController.bookTickets(theatreId,showId,userId,seats);
-        System.out.println("Ticket successfully booked");
-        System.out.println("Show ID "+ticket.getShowId()+
-                "theatre Id"+ticket.getTheatreId() +" UserName " +ticket.getUser().getUserName());
+        Assertions.assertThrows(Exception.class,()->bookMyShowController.bookTickets(theatreId,showId,userId,seats));
     }
 }

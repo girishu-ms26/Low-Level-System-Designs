@@ -55,6 +55,6 @@ public class BaseTest {
         PaymentService paymentService = new PaymentService(userService,dataProvider,showService);
 
         MovieService movieService = new MovieService(theatreService,cityService,dataProvider);
-        bookMyShowController = new BookMyShowController(theatreService,paymentService,movieService,cityService);
+        bookMyShowController = new BookMyShowController(paymentService,movieService,cityService);
     }
 }

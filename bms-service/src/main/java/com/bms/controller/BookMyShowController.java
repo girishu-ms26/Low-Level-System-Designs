@@ -11,7 +11,6 @@ import java.util.List;
 
 @AllArgsConstructor
 public class BookMyShowController {
-    private TheatreService theatreService;
     private PaymentService paymentService;
     private MovieService movieService;
     private CityService cityService;

@@ -19,6 +19,7 @@ public class TheatreService {
         this.cityService = cityService;
         this.cityTheatreMap = this.provider.cityTheatreMap;
     }
+    
     public List<Theatre> getAllTheatres() {
        List<Theatre> theatres = new ArrayList<>();
        for(Map.Entry<City,List<Theatre>> entry : cityTheatreMap.entrySet()) {
